@@ -1,0 +1,488 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Georgia', 'Times New Roman', Times, serif, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    overflow-x: hidden;
+    cursor: none;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-right {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 9999;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    padding-left: 200px;
+}
+
+.nav-right {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-right: 50px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+    color: #f08d8d;
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 4rem;
+}
+
+.profile-image {
+    position: relative;
+}
+
+.profile-image::before {
+    content: "";
+    display: block;
+    width: 324px;
+    height: 432px;
+    border: 3px solid #000000;
+    position: absolute;
+    top: 2rem;
+    right: -2rem;
+    z-index: -1;
+}
+
+.profile-img {
+    height: 432px;
+    width: 324px;
+    z-index: 9999;
+}
+
+.disco {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.disco-text {
+    max-width: 50%;
+    padding: 0 120px;
+}
+
+.disco-text h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* About Section */
+.section-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 450px;
+}
+
+.about-image {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    color: #000000;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+.project-about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Ajouté pour empiler le texte et les projets */
+    align-items: center; /* Centrer le contenu */
+}
+
+.project-about h2 {
+    font-size: 36px;
+    color: #000000;
+}
+
+.project-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espace entre les cartes de projet */
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px; /* Largeur fixe pour les cartes de projet */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Effet de survol */
+}
+
+.project-card h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Languages Section */
+.languages-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.language-title {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.languages-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.languages-container div {
+    text-align: center;
+}
+
+.languages-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.languages-container h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.language {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.language:hover {
+    transform: scale(1.05);
+}
+
+.language img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.language h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.language p {
+    color: #607d8b;
+    margin-top: 10px;
+}
+
+/* Certification Section */
+.certification {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.certification h2 {
+    font-size: 36px;
+    color: #000000;
+}
+
+.card-certification {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espace entre les cartes */
+}
+
+.certification-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px; /* Largeur fixe pour les cartes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.certification-card:hover {
+    transform: scale(1.05); /* Effet de survol */
+}
+
+.certification-card h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.certification-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.certification-logo {
+    width: 100px; /* Largeur fixe pour les logos */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+    margin-bottom: 10px; /* Espace entre le logo et le texte */
+}
+
+/* Contact Section */
+.contact-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-about h2 {
+    font-size: 36px;
+    color: #000000;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icon {
+    margin: 0 15px;
+    color: #000000;
+    font-size: 48px;
+    text-decoration: none;
+}
+
+.icon:hover {
+    color: #007BFF;
+}
+
+/* Footer Styles */
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rights {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    color: #000000;
+    padding-left: 250px;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: #000000;
+    padding-right: 250px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #ff9800;
+}
+
+/* Section Margins */
+section {
+    margin-bottom: 150px;
+}
+
+/* Wrapper Styles */
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: default;
+}
+
+/* Link Styles */
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: none;
+    color: #ffffff;
+    /* White on hover */
+}
+
+/* Circle Cursor Effect */
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 999999999;
+    /* Ensures it stays on top */
+}
+
+/* Text Animation */
+.text {
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: slideDown 2s forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
+}
+
+/* Button Styles */
+.button {
+    width: 120px;
+    height: 50px;
+    border: 2px solid #000000;
+    background: transparent;
+    position: relative;
+    z-index: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    /* White text on hover */
+}
